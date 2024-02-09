@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgb(3, 58, 3) 75%,
+    rgb(190, 117, 20) 25%
+  );
+  color: white;
+}
+
+.nav {
+  height: 10vh;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2vw;
+}
+.logo img {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.navMenu ul li {
+  display: inline;
+  margin: 1vw;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.footer {
+  position: relative;
+  top: 100vh;
+}
+.main_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.content_writen {
+  padding-bottom: 3vh;
+  padding-left: 4vw;
+  width: 60%;
+}
+.content_writen h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2vw;
+}
+.content_writen h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 7vw;
+}
+.content_writen p {
+  margin-top: 4px;
+  font-family: cursive;
+}
+.bestSeller {
+  height: 233px;
+  width: 75%;
+  color: rgb(190, 117, 20);
+  padding: 3.5% 9%;
+  background-color: aliceblue;
+  border-top-right-radius: 20%;
+}
+.bestSeller h1 {
+  font-family: cursive;
+  font: weight 600px;
+  font-size: 2.5rem;
+  padding-left: 25%;
+  margin-bottom: 5%;
+}
+.bestSeller_img {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  justify-content: space-around;
+  position: relative;
+}
+.bestSeller_img img {
+  height: 165px;
+  width: 125px;
+}
+.color {
+  height: 11rem;
+  width: 8.5rem;
+  background-color: rgb(3, 58, 3);
+  border-radius: 10% 10% 0 0;
+}
+
+.image_popup {
+  height: 50%;
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 30vh;
+}
+
+.image_popup > img {
+  /* background-color: antiquewhite; */
+  /* position: absolute; */
+  height: 500px;
+  width: 400px;
+  filter: drop-shadow(20px 10px 20px black);
+}
+
+.image_popup > img:hover {
+  animation-name: popup;
+  transition: all ease-in;
+}
+@keyframes popup {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* .image_popup::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+} */
+
+.mocha{
+ 
+  font-size: 100px;
+  transform: rotate(270deg);
+  position: absolute;
+  bottom: 23%;
+  right: 20%;
+  z-index: -1;
+  color: rgba(253, 207, 146, 0.61);
+ 
+} 
