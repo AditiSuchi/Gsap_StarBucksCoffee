@@ -34,16 +34,18 @@ body {
   font-size: x-large;
   font-weight: bolder;
 }
-.footer {
+/* .footer {
   position: relative;
-  top: 100vh;
-}
+/*   top: 100vh; */
+} */
 .main_page {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 2vh;
+  height: 100%;
+  max-height: 90vh;
+/*   margin-top: 2vh; */
 }
 .content {
   display: flex;
